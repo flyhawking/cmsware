@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:Contents xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:Content>
+  <ContentID>1</ContentID>
+  <CreationDate>1126851951</CreationDate>
+  <ModifiedDate>1126851951</ModifiedDate>
+  <CreationUserID>1</CreationUserID>
+  <LastModifiedUserID>1</LastModifiedUserID>
+  <ContributionUserID>0</ContributionUserID>
+  <ContributionID>0</ContributionID>
+  <Content>&#10;&#10;最新CMSware演示站推出，敬请期待！ </Content>
+ </CMS:Content>
+ <CMS:Content>
+  <ContentID>2</ContentID>
+  <CreationDate>1126852028</CreationDate>
+  <ModifiedDate>1126852028</ModifiedDate>
+  <CreationUserID>1</CreationUserID>
+  <LastModifiedUserID>1</LastModifiedUserID>
+  <ContributionUserID>0</ContributionUserID>
+  <ContributionID>0</ContributionID>
+  <Content>&#10;&#10;新的风貌，新的开始，希望大家一如既往地支持本站！ </Content>
+ </CMS:Content>
+ <CMS:Content>
+  <ContentID>3</ContentID>
+  <CreationDate>1126852047</CreationDate>
+  <ModifiedDate>1126852047</ModifiedDate>
+  <CreationUserID>1</CreationUserID>
+  <LastModifiedUserID>1</LastModifiedUserID>
+  <ContributionUserID>0</ContributionUserID>
+  <ContributionID>0</ContributionID>
+  <Content>&#10;&#10;CMSware，放飞你的理想！</Content>
+ </CMS:Content>
+</CMS:Contents>

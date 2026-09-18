@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:site xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:content-models>
+  <TableID>1</TableID>
+  <TableID>3</TableID>
+  <TableID>4</TableID>
+  <TableID>5</TableID>
+  <TableID>6</TableID>
+ </CMS:content-models>
+ <CMS:Node>node.xml</CMS:Node>
+ <CMS:content-index>content_index.xml</CMS:content-index>
+ <CMS:content>
+  <file>content_1.xml</file>
+  <file>content_2.xml</file>
+  <file>content_3.xml</file>
+  <file>content_4.xml</file>
+  <file>content_5.xml</file>
+  <file>content_6.xml</file>
+ </CMS:content>
+ <CMS:resource>resource.xml</CMS:resource>
+ <CMS:resource-ref>resource_ref.xml</CMS:resource-ref>
+ <CMS:www-file/>
+</CMS:site>

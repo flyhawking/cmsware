@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:NodeFields xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:NodeField>
+  <FieldID>1</FieldID>
+  <FieldTitle>测试字段1</FieldTitle>
+  <FieldName>NodeTest</FieldName>
+  <FieldType>varchar</FieldType>
+  <FieldSize>250</FieldSize>
+  <FieldInput>text</FieldInput>
+  <FieldDescription/>
+  <FieldOrder>0</FieldOrder>
+  <FieldAccess>1</FieldAccess>
+  <FieldDataSource/>
+ </CMS:NodeField>
+ <CMS:NodeField>
+  <FieldID>2</FieldID>
+  <FieldTitle>测试字段2</FieldTitle>
+  <FieldName>NodeTest2</FieldName>
+  <FieldType>int</FieldType>
+  <FieldSize>10</FieldSize>
+  <FieldInput>text</FieldInput>
+  <FieldDescription/>
+  <FieldOrder>0</FieldOrder>
+  <FieldAccess>1</FieldAccess>
+  <FieldDataSource/>
+ </CMS:NodeField>
+</CMS:NodeFields>

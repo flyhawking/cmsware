@@ -1,0 +1,19 @@
+* 现在的后台在IE7里没有错误，只有一个地方，编码器不能显示！提示：
+Your browser must be IE5.5 or above to display the DevEdit control. A plain text box will be displayed instead.
+* 关键词替换过程中，有12个关键词需要替换，要循环12次替换不同的关键词，但每次替换时都又替换了全部关键词，这样就造成了如果替换后的词里包含要替换的原始词时就会产生重复替换的后果。如：将 "李玉国" 替换成 "李玉国专家" ,那么在在第二个有 这个词的新闻时，就会成了 “李玉国专家专家....”后面的专家在循环。
++ NodeGUID ，增加 all- 参数的支持。就像all-{NodeID} 一样使用方法。
++ CMS::NODELIST结点列表加上 orderby 参数,默认为“NodeSort DESC”
++ 新增用户名调用函数CreationUser，根据后台用户id去查出。 [@CreationUser($CreationUserID)]
+* <include file="header.html" NodeID="2" /> 子模版调用时，调不出任何。
+中间文件 <?php $this->_tpl_vars['nodeid'] = "2";?> NodeID变小写了
+* 使用test.html作为新闻模型的投稿录入模板：contribution.php?TableID=1&Tpl=test 上面是publish 目录里的说明，但现在 Tpl=test 无效，必须是带文件名后缀Tpl=test.html 才行，希望默认不用带.html后缀就可以使用。以减短URL。方便使用。现在开始支持默认不用带.html后缀的Tpl传入
++引用评论的功能
+
+* 关于登陆时图片验证码Session的问题! 很多客户遇到，莫名其秒
+session改为存储在{cms}/sysdata（登录验证码）和{cms}/publish/tmp（评论验证码）下面
+
+
+
+* 自定义外部url的文章修改后无法更新，要更新每次还要先取消发布再发布，很不方便
++ 安装好初次登录采用更友好的方式提醒用户进行整站更新
+

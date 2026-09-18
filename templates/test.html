@@ -1,0 +1,16 @@
+<CMS action="NODELIST" return="List" type="sub" NodeID="1" orderby=" NodeID DESC " />
+<debug name="List" />
+<loop name="List" key="key" var="var">
+[$var.Name]<br>
+</loop>
+
+[@CreationUser(1)]
+-----------
+<CMS action="ExtraPublish" return="ExtraInfo" NodeID="1" /> 
+<ul>
+<loop name="ExtraInfo" var="var" key="key">
+<li><A HREF=" [$var.URL] "> [$var.PublishName] </A></li>
+</loop> 
+</ul> 
+
+<debug name="ExtraInfo" />

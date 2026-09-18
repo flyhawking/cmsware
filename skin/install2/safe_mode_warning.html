@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<title>CMSware 安装向导</title>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<meta http-equiv="Content-Type" content="text/html; charset=[$charset]">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<style type="text/css">
+td{FONT-FAMILY: "Verdana", "仿宋体";  font-size: 12px} 
+
+tr{FONT-FAMILY: "Verdana", "仿宋体"; font-size: 12px} 
+
+
+
+.button{
+	height:18;
+	background-color:#FFFFFF;
+	border: 1 solid #CCCCCC;
+	font-family:"sans-serif";
+	font-size: 12px;
+}
+.fixline {
+	border: 1px dotted #999999;
+}
+.subbutton {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	background-color: #C6D8F0;
+	border-top-width: 1.5px;
+	border-right-width: 1.5px;
+	border-bottom-width: 1.5px;
+	border-left-width: 1.5px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #FFFFFF;
+	height: 22px;
+	padding-top: 3px;
+	width: 66px;
+}
+
+a {FONT-FAMILY: "Verdana", "宋体"; TEXT-DECORATION: none;FONT-SIZE: 12px; color: #000000} 
+
+a:hover {COLOR: #000000; TEXT-DECORATION: underline;FONT-SIZE:12px;} 
+#description { font-family:  "sans-serif";color:#000000; font-size:12px }
+</style>
+<script type="text/javascript" src="html/images/helptip.js"></script>
+<link type="text/css" rel="StyleSheet" href="html/images/helptip.css" />
+<script  type="text/javascript" language="javascript" src="html/title_fade.js"></script>
+<script src="html/functions.js" type="text/javascript" language="javascript"></script>
+<body bgcolor="" TOPMARGIN="0" LEFTMARGIN="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80%" height="70" bgcolor="#2D66B5"><img src="html/images/install.gif" ></td>
+    <td><table width="100%" height="70" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#2E68B8">&nbsp;</td>
+          <td bgcolor="#4D86D2">&nbsp;</td>
+          <td bgcolor="#739FDB">&nbsp;</td>
+          <td bgcolor="#9ABAE4">&nbsp;</td>
+          <td bgcolor="#C6D8F0">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="40">
+	</td>
+  </tr>
+</table>
+<table width="80%" border="0" align="center" cellpadding="8" cellspacing="0" class="fixline">
+   <form action="[$phpself]?step=ftp_mode" method="post">
+ <tr> 
+    <td>
+	<H2><FONT COLOR="#FF0000">警告！你的系统运行在安全限制模式。</FONT><A HREF="?step=phpinfo" target="_blank">&lt;?PHP信息查看?&gt;</A></H2>
+	<p><B>安全限制模式</B> 并不一定和服务器php配置文件php.ini的safe_mode=on有关.<br>主要原因可能是Apache的运行User/Group和你FTP上传的文件的User/Group不符合,导致php创建的目录php本身无法具备写权限.<br>（比如Apache运行的User和Group为nobody,而你用ftp上传的文件的User/Group可能是ftpusername,就可能导致此问题.请使用chown命令将上传的php文件设置为nobody的用户和组）,如下命令:<ul><li>  chown -R nobody:nobody    &nbsp;[你的cmsware目录] </li></ul>如果你使用的是php运行环境限制比较多的虚拟主机，可能无法使用chown命令，这时候需要使用CMSware的FTP模式来运行 ,如果你的空间支持FTP模块，请按下列提示设置你的ftp帐号，即可正常使用CMSware.</p>
+
+	 <p><strong>CMS管理目录相对FTP根目录的路径: </strong>这个的设置要特别注意,不然会导致无法使用CMSware,看准了是CMSware管理目录,也就是admin目录相对FTP根目录的路径。<br/><br/>比如你登陆ftp后显示的目录结构如下 <br/><strong>/cgi-bin </strong><br/><strong>/other </strong><br/><strong>/www </strong><br/>你的CMSware管理目录位于 <strong>/www/cms/admin </strong><br/>则设置你的CMS管理目录相对FTP根目录的路径为 <strong>/www/cms/admin </strong> </p>
+	<!--{{{ FTP Setting -->
+	 <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td align="center" bgcolor="#ececec"> <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#2E68B8">
+                <tr> 
+                  <td colspan="2" bgcolor="#2E68B8" ><font color="#FFFFFF">&nbsp;<B>FTP帐号设置</B>（你的系统运行在安全限制模式，建议改用FTP模式运行CMSware）：</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec" width="28%">FTP服务器地址:</td>
+                  <td bgcolor="#ececec"><input name="ftp_host" type="text" class="button" id="ftp_host" value="{$_SERVER["HTTP_HOST"]}">&nbsp;&nbsp;端口号:<input name="ftp_port" type="text" class="button" id="ftp_port" value="21" size=6></td>
+                 </tr>
+                <tr> 
+                  <td bgcolor="#ececec">FTP用户名:</td>
+                  <td bgcolor="#ececec"><input name="ftp_username" type="text" class="button" id="ftp_username" value=""></td>
+                 </tr>
+                <tr> 
+                  <td bgcolor="#ececec">FTP密码:</td>
+                  <td bgcolor="#ececec"><input name="ftp_password" type="password" class="button" id="ftp_password" value=""></td>
+                 </tr>
+                <tr> 
+                  <td bgcolor="#ececec"> CMS管理目录相对FTP根目录的路径:</td>
+                  <td bgcolor="#ececec"><input name="ftp_cms_admin_path" type="text" class="button" id="ftp_cms_admin_path" value="">
+                   </td>
+                 </tr>
+               
+              </table></td>
+          </tr>
+        </table>
+	 <!--FTP Setting }}}-->
+ </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="20">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"  > 
+       
+      <input name="Submit" type="submit" class="subbutton" value=" 继 续 " >
+    </td>
+	
+  </tr>
+ </form>
+	  </table>
+</body>
+</html>

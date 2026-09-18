@@ -1,0 +1,2 @@
+1.站点安装包存放在install/site目录下,并在install/site_install.xml进行配置注册，即可加入到安装选项中
+2.site_install.xml中的SiteUID是站点的唯一标识符。安装程序会自动寻找install/site/{SiteUID}的目录名，如果目录不存在，就寻找install/site/{SiteUID}.zip，并解压到install/site目录下

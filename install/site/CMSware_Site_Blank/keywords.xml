@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:Keywords xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:Keyword>
+  <kId>1</kId>
+  <keyword>思维CMSware</keyword>
+  <kReplace>【思维CMSware】</kReplace>
+  <IsGlobal>1</IsGlobal>
+  <NodeScope/>
+ </CMS:Keyword>
+</CMS:Keywords>

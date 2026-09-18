@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:ExtraPublishs xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:ExtraPublish>
+  <PublishID>2</PublishID>
+  <NodeID>2</NodeID>
+  <PublishName>test</PublishName>
+  <SelfPSN/>
+  <SelfPSNURL/>
+  <PublishFileName>input_test.html</PublishFileName>
+  <Tpl>/test.html</Tpl>
+  <Intro/>
+  <CreationUserID>1</CreationUserID>
+  <LastModifiedUserID>1</LastModifiedUserID>
+  <CreationDate>1127447504</CreationDate>
+  <ModifiedDate>1164445701</ModifiedDate>
+ </CMS:ExtraPublish>
+ <CMS:ExtraPublish>
+  <PublishID>3</PublishID>
+  <NodeID>1</NodeID>
+  <PublishName>test</PublishName>
+  <SelfPSN/>
+  <SelfPSNURL/>
+  <PublishFileName>1163217082.html</PublishFileName>
+  <Tpl>/test.html</Tpl>
+  <Intro/>
+  <CreationUserID>1</CreationUserID>
+  <LastModifiedUserID>1</LastModifiedUserID>
+  <CreationDate>1163217095</CreationDate>
+  <ModifiedDate>1163217095</ModifiedDate>
+ </CMS:ExtraPublish>
+</CMS:ExtraPublishs>

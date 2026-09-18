@@ -1,0 +1,216 @@
+<include file="header.html" />
+<div id="commend">
+
+<CMS action="LIST" return="List" where="co.TableID=6"  TableID="6" num="5" />
+<loop name="List" key="key" var="var" >
+<div class="box_xs">
+<ul>
+<li class="box_xs_t">&nbsp;</li>
+<li class="box_xs_c"><a href="[$var.URL]" ><img alt="[$var.PhotoName]" src="[@AutoMini($var.PhotoURL,'100*80',$var)]" width="100" /></a></li>
+<li class="box_xs_c2"><a href="[$var.URL]" title="[$var.PhotoName]">[@CsubStr($var.PhotoName, 0, 10)]</a></li>
+<li class="box_xs_b">&nbsp;</li>
+</ul>
+</div>
+</loop>
+
+
+ 
+
+
+
+</div>
+<span class="cls"></span>
+
+<div id="left">
+
+<include file="search_box.html"/>
+
+<div class="box_s">
+<div class="box_s_t">&nbsp;</div>
+<div class="box_s_c">
+<h4>推荐图片</h4>
+<ul>
+<!--推荐图片调用，调用所有分类中的精华设置图片(i.Pink DESC )-->
+<CMS action="LIST" return="List"  orderby="i.Pink DESC" where="co.TableID=6" TableID="6" num="10" />
+<LOOP name="List" var="var" key="key"> 
+<li><a href=" [$var.URL] " target=_blank title=" [$var.PhotoName] " >[@CsubStr($var.PhotoName, 0, 10)] </a> </li>
+</LOOP> 
+</ul>
+</div>
+<div class="box_s_b">&nbsp;</div>
+</div>
+
+<div class="box_s">
+<div class="box_s_t">&nbsp;</div>
+<div class="box_s_c">
+<h2>总点击排行</h2>
+<ul>
+<!--总点击排行调用，使用Hits_Total进行排序-->
+<CMS action="LIST" return="List"  where="co.TableID=6" orderby="Hits_Total" TableID="6" num="10" />
+<LOOP name="List" var="var" key="key"> 
+<li><a href=" [$var.URL] " target=_blank title=" [$var.PhotoName] " >[@CsubStr($var.PhotoName, 0, 10)] </a>
+</LOOP> 
+
+</ul>
+</div>
+<div class="box_s_b">&nbsp;</div>
+</div>
+<div class="box_s">
+<div class="box_s_t">&nbsp;</div>
+<div class="box_s_c">
+<h3>本周点击排行</h3>
+<ul>
+<!--总点击排行调用，使用Hits_Week进行排序-->
+<CMS action="LIST" return="List"  where="co.TableID=6" orderby="Hits_Week" TableID="6" num="10" />
+<LOOP name="List" var="var" key="key"> 
+<li><a href=" [$var.URL] " target=_blank title=" [$var.PhotoName] " >[@CsubStr($var.PhotoName, 0, 10)] </a>
+</LOOP> 
+
+</ul>
+</div>
+<div class="box_s_b">&nbsp;</div>
+</div>
+<div class="box_s">
+<div class="box_s_t">&nbsp;</div>
+<div class="box_s_c">
+<h4>今日点击排行</h4>
+<ul>
+<!--总点击排行调用，使用Hits_Today进行排序-->
+<CMS action="LIST" return="List"  where="co.TableID=6" orderby="Hits_Today" TableID="6" num="10" />
+<LOOP name="List" var="var" key="key"> 
+<li><a href=" [$var.URL] " target=_blank title=" [$var.PhotoName] " >[@CsubStr($var.PhotoName, 0, 10)] </a>
+</LOOP> 
+
+</ul>
+</div>
+<div class="box_s_b">&nbsp;</div>
+</div>
+
+ 
+
+<include file="../copyright.html" />
+
+</div><!--end left-->
+<div id="right">
+
+
+
+<!--{{{left one-->
+<div class="box_m_left">
+<div class="box_m_t">&nbsp;</div>
+<div class="box_m_c">
+<h3><a href="#" title="更多更新...">最新图片</a></h3>
+<ul class="com">
+<CMS action="LIST" return="List"  where="co.TableID=6" orderby="i.PublishDate DESC " TableID="6" num="10" />
+<LOOP $List var=var key=key> 
+<li><span class='date'>[@date("m-d", $var.PublishDate)]</span><a href="[$var.URL]" title="[$var.PhotoName]">[@CsubStr($var.PhotoName, 0, 15)] </a></li>
+</LOOP> 
+</ul>
+</div>
+<div class="box_m_b">&nbsp;</div>
+</div>
+<!--}}}-->
+
+<!--{{{right one-->
+<div class="box_m_right">
+<div class="box_m_t">&nbsp;</div>
+<div class="box_m_c">
+<h2><a href="#" title="更多文章更新...">最新文章</a></h2>
+<ul class="com">
+<CMS action="LIST" return="List"  where="co.TableID=1" orderby="i.PublishDate DESC " TableID="1" num="10" />
+<LOOP $List var=var key=key> 
+<li><span class='date'>[@date("m-d", $var.PublishDate)]</span><a href="[$var.URL]" title="[$var.Title]">[@CsubStr($var.Title, 0, 15)] </a></li>
+</LOOP> 
+</ul>
+</div>
+<div class="box_m_b">&nbsp;</div>
+</div>
+<!--}}}-->
+
+
+<!--{{{调用精华图片-->
+<div class="box_l">
+<div class="box_l_t">&nbsp;</div>
+<div class="box_l_c" id="news">
+<h1 id="idx_news">热力推荐</h1>
+
+<CMS action="LIST" return="List"   orderby="i.Pink DESC" where="co.TableID=6"   TableID="6" num="3" /> 
+<table border="0" cellpadding="0" cellspacing="0"   >
+<tr><td>
+<loop name="List" key="key" var="var" start="1">
+<div class="imagespacer" >
+			<div class="imageholder" >
+			<A HREF="[$var.URL]"><img  alt="[$var.PhotoName]" src="[@AutoMini($var.PhotoURL, '160*120', $var)]"   style="MARGIN-LEFT:0px;MARGIN-TOP:0px;BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000;border:1px" /></A> 
+			</div>
+
+			<div class="titleholder">
+ <A HREF="[$var.URL]" title="[$var.PhotoName]">[$var.PhotoName]</A>
+			</div>
+</div>
+
+<if test="$key%3 == 0">
+</td></tr>
+<tr><td>
+</if>
+
+</loop>
+</td></tr>
+</table>
+
+
+</div>
+<div class="box_l_b">&nbsp;</div>
+</div>
+<!--}}}-->
+
+
+ <!--{{{开始调用点击中心下的所有子结点信息-->
+<CMS action="NODELIST" return="NodeList" Type="sub" NodeGUID="com.cmsware.demo.photo"   />
+  <loop name="NodeList" key="keyNodeInfo" var="varNodeInfo" start="1" >
+	<if test="$keyNodeInfo%2 == 0">
+ 		<div class="box_m_right">
+	<else>
+ 		<div class="box_m_left">
+	</if>
+ 	<div class="box_m_t">&nbsp;</div>
+	<div class="box_m_c">
+	<h3><a href="[$varNodeInfo.NodeURL]" title="更多更新...">[$varNodeInfo.Name]</a></h3>
+	<ul class="com">
+		<CMS action="LIST" return="List"  where="co.TableID=6" NodeID="{$varNodeInfo.NodeID}" TableID="6" num="10" />
+			<LOOP name="List" var="var" key="key"> 
+			<li><span class='date'>[@date("m-d", $var.PublishDate)]</span><a href="[$var.URL]" title="[$var.PhotoName]">[@CsubStr($var.PhotoName, 0, 14)] </a></li>
+			</LOOP> 
+	</ul>
+	</div>
+	<div class="box_m_b">&nbsp;</div>
+	</div>
+</loop>
+ <!--}}}-->
+
+  
+<div class="box_l">
+	<div class="box_l_t">&nbsp;</div>
+		<div class="box_l_c" id="news">
+		<CMS action="NODE" return="NodeInfo" NodeGUID="com.cmsware.download.links" />
+		<h1 id="idx_news">[$NodeInfo.Name]</h1>
+		<ul>
+		<CMS action="LIST" return="List" NodeGUID="com.cmsware.download.links" orderby="i.PublishDate ASC"    />
+		<li>
+		<LOOP name="List" var="var" key="key" > 
+ 		<a href="[$var.LinkURL]" title="[$var.LinkName]" target="_blank">[$var.LinkName]</a>&nbsp;&nbsp;
+		</LOOP>
+		</li>
+
+		</ul>
+		</div>
+		<div class="box_l_b">&nbsp;</div>
+		</div>
+
+	</div>
+<!--right end -->
+<span class="cls"></span>
+</div>
+<include: file="../footer.html">
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<title>[$version] 安装向导</title>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META NAME="Description" CONTENT="">
+</HEAD>
+<style type="text/css">
+<include: file="installstyle.css">
+</style>
+
+<script  type="text/javascript" language="javascript" src="html/title_fade.js"></script>
+<script src="html/functions.js" type="text/javascript" language="javascript"></script>
+<body bgcolor="" TOPMARGIN="0" LEFTMARGIN="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80%" height="70" bgcolor="#2D66B5"><img src="html/images/install.gif" ></td>
+    <td><table width="100%" height="70" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#2E68B8">&nbsp;</td>
+          <td bgcolor="#4D86D2">&nbsp;</td>
+          <td bgcolor="#739FDB">&nbsp;</td>
+          <td bgcolor="#9ABAE4">&nbsp;</td>
+          <td bgcolor="#C6D8F0">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+</table>
+<form action="[$phpself]" method="post" >
+  <table width="70%" border="0" align="center" cellpadding="8" cellspacing="0" class="fixline">
+    <tr> 
+      <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td align="center" bgcolor="#ececec"> 
+			
+			<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#2E68B8">
+                <tr> 
+                  <td   bgcolor="#2E68B8"><font color="#FFFFFF">&nbsp;请选择你要安装的站点：</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec">
+<loop name="sites" var="var" key="key">
+<if $var.Checked == 1 >
+<INPUT TYPE="radio" NAME="SiteUID" id="SiteUID[$var.SiteUID]" value="[$var.SiteUID]" checked>
+<else>
+<INPUT TYPE="radio" NAME="SiteUID" id="SiteUID[$var.SiteUID]" value="[$var.SiteUID]" >
+</if>
+<label for="SiteUID[$var.SiteUID]"><B>[$var.Name]</B></label>
+<BR>
+<BLOCKQUOTE>[$var.Desc]</BLOCKQUOTE>
+
+ </loop>
+
+
+
+</td>
+                  
+                </tr>
+                
+              </table></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td height="20">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td align="center"  ><input name="step" type="hidden" id="step" value="install_site_submit"> 
+<input name="installType" type="hidden" id="installType" value="[$installType]"> 
+
+        <input name="Submit2" type="button" class="subbutton" value="上一步" onClick="javascript:history.go(-1);"> 
+        &nbsp;&nbsp;&nbsp;&nbsp; <input name="Submit" type="submit" class="subbutton" value="下一步" > 
+      </td>
+    </tr>
+  </table>
+</form>
+<include file="footer.html"/>
+</body>
+</html>

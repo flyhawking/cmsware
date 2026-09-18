@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<title>[$version] 安装向导</title>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META NAME="Description" CONTENT="">
+</HEAD>
+<style type="text/css">
+<include: file="installstyle.css">
+</style>
+
+<script type="text/javascript" language="javascript">
+function check(){
+ 		return true;
+ 	
+}
+</script>
+
+<script  type="text/javascript" language="javascript" src="html/title_fade.js"></script>
+<script src="html/functions.js" type="text/javascript" language="javascript"></script>
+<body bgcolor="" TOPMARGIN="0" LEFTMARGIN="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80%" height="70" bgcolor="#2D66B5"><img src="html/images/install.gif" ></td>
+    <td><table width="100%" height="70" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#2E68B8">&nbsp;</td>
+          <td bgcolor="#4D86D2">&nbsp;</td>
+          <td bgcolor="#739FDB">&nbsp;</td>
+          <td bgcolor="#9ABAE4">&nbsp;</td>
+          <td bgcolor="#C6D8F0">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+</table>
+<form action="install.php" method="post" name="admin">
+  <table width="70%" border="0" align="center" cellpadding="8" cellspacing="0" class="fixline">
+    <tr> 
+      <td align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><font color="#0000EE"> 
+              [$output]
+              </font></td>
+          </tr>
+        </table>
+        <hr align="center" size="1">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td align="center" bgcolor="#ececec"> <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#2E68B8">
+                <tr> 
+                  <td colspan="3" bgcolor="#2E68B8"><font color="#FFFFFF">&nbsp;创建搜索/评论/计数部署数据库(DSN)：</font></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec">DSN标识名:</td>
+                  <td bgcolor="#ececec"><input name="Name" type="text" class="button" id="Name" value="/评论/计数部署数据库" ></td>
+                  <td bgcolor="#ececec">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec">数据库服务器:</td>
+                  <td bgcolor="#ececec"><input name="database_host" type="text" class="button" id="database_host" value="[$db_host]"></td>
+                  <td bgcolor="#ececec">数据库服务器地址</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec">数据库用户名:</td>
+                  <td bgcolor="#ececec"><input name="database_user" type="text" class="button" id="database_user" value="[$db_user]"></td>
+                  <td bgcolor="#ececec">数据库账号用户名</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec">数据库密码:</td>
+                  <td bgcolor="#ececec"><input name="database_password" type="password" class="button" id="database_password" value="[$db_password]"></td>
+                  <td bgcolor="#ececec"> 数据库账号密码</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#ececec"> 数据库名:</td>
+                  <td bgcolor="#ececec"><input name="database_name" type="text" class="button" id="database_name" value="[$db_name]">
+                    <label for="autoCreateDB" checked></label></td>
+                  <td bgcolor="#ececec"> 数据库名称 </td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <br>
+        <table width="400" border="0">
+          <tr> 
+            <td><p>名词解释：</p>
+              <ul>
+                <li><strong>DSN</strong>：<em>Database Source Name</em>（数据库资源名称）。<br>
+                  <br>
+                  <ul>
+                    <li>CMSware通过定义DSN，实现了数据库内容的远程发布，也就是通过PSN实现了静态内容的远程发布，而通过DSN，实现了动态内容的远程发布，从而真正意义上实现了内容层与发布层的完全分离。<br>
+                      <br>
+                    <li>目前的DSN可以用来部署搜索、评论、计数的数据库，但DSN的应用远不限于此，未来构建在CMSware基础发布平台上的各类应用系统都可以通过DSN实现的数据共享紧密的集成在一起。 
+                      <br>
+                  </ul>
+                </li>
+              </ul></td>
+          </tr>
+        </table> </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td height="20">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td align="center"  ><input name="step" type="hidden" id="step" value="6"> 
+        <input name="Submit2" type="button" class="subbutton" value="上一步" onClick="javascript:history.go(-1);"> 
+        &nbsp;&nbsp;&nbsp;&nbsp; <input name="Submit" type="submit" class="subbutton" value="下一步" onClick="return check();"> 
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

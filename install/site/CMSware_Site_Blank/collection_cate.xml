@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMS:CollectionCates xmlns:CMS="http://www.w3.org/1999/xhtml">
+ <CMS:CollectionCate>
+  <CateID>1</CateID>
+  <TableID>1</TableID>
+  <Name>新华网</Name>
+  <ParentID>0</ParentID>
+  <Disabled>0</Disabled>
+  <NodeID>1</NodeID>
+  <SubNodeID>3</SubNodeID>
+  <IndexNodeID>4</IndexNodeID>
+  <TargetURL>http://www.xinhuanet.com/newscenter/xhyw.htm</TargetURL>
+  <TargetURLArea>新华要闻{DATA}&lt;/html&gt;</TargetURLArea>
+  <UrlFilterRule>/(http:\/\/news.xinhuanet.com[^\&quot;&gt;&lt;\s]*content_[0-9]+.htm)/isU</UrlFilterRule>
+  <RepeatCollection>0</RepeatCollection>
+  <HiddenImported>0</HiddenImported>
+  <AutoImport>1</AutoImport>
+  <UrlPageRule>&lt;center&gt;&lt;a href=&quot;{DATA}&quot; class=&quot;nextpage&quot;&gt;&lt;img</UrlPageRule>
+  <DelAfterImport>0</DelAfterImport>
+  <InRunPlan>0</InRunPlan>
+ </CMS:CollectionCate>
+ <CMS:CollectionCate>
+  <CateID>2</CateID>
+  <TableID>2</TableID>
+  <Name>华军软件园</Name>
+  <ParentID>0</ParentID>
+  <Disabled>0</Disabled>
+  <NodeID>4</NodeID>
+  <SubNodeID>2</SubNodeID>
+  <IndexNodeID>2</IndexNodeID>
+  <TargetURL>http://nj.onlinedown.net/sort/1_1.htm</TargetURL>
+  <TargetURLArea>/&lt;font color=\&quot;#ffffff\&quot;&gt;人气&lt;\/font&gt;&lt;\/td&gt;(.*)&lt;\/html&gt;/isU</TargetURLArea>
+  <UrlFilterRule>/&lt;a[\s]*href=\&quot;([^\&quot;&gt;&lt;\s]*[0-9]+.htm)\&quot;/isU</UrlFilterRule>
+  <RepeatCollection>0</RepeatCollection>
+  <HiddenImported>1</HiddenImported>
+  <AutoImport>0</AutoImport>
+  <UrlPageRule/>
+  <DelAfterImport>0</DelAfterImport>
+  <InRunPlan>0</InRunPlan>
+ </CMS:CollectionCate>
+</CMS:CollectionCates>

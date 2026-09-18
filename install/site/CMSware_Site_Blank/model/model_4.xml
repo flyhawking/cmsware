@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentTable>
+ <version>1.1</version>
+ <Name>新闻快讯</Name>
+ <TableID>4</TableID>
+ <Fields>
+  <Field>
+   <ContentFieldID>27</ContentFieldID>
+   <TableID>4</TableID>
+   <FieldTitle>新闻快讯内容</FieldTitle>
+   <FieldName>Content</FieldName>
+   <FieldType>text</FieldType>
+   <FieldSize/>
+   <FieldInput>RichEditor</FieldInput>
+   <FieldDefaultValue/>
+   <FieldInputFilter/>
+   <FieldInputPicker/>
+   <FieldInputTpl/>
+   <FieldDescription/>
+   <FieldOrder>0</FieldOrder>
+   <FieldListDisplay>1</FieldListDisplay>
+   <IsMainField>0</IsMainField>
+   <IsTitleField>1</IsTitleField>
+   <FieldSearchable>0</FieldSearchable>
+   <EnableContribution>1</EnableContribution>
+   <EnableCollection>1</EnableCollection>
+   <EnablePublish>1</EnablePublish>
+  </Field>
+ </Fields>
+</ContentTable>
