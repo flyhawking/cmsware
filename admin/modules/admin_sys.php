@@ -17,7 +17,7 @@ function callRemoter($Path)
 
 	global $LicenseInfo,$db,$db_config,$table,$_PatchVersion;
 
-	$Host = "www.cmsware.org";
+	$Host = "www.cmsware.net";
 	//$Path = "/update/version.php";
 	$Port = 80;
 
