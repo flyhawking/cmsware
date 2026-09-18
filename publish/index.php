@@ -17,7 +17,7 @@ if(_BBS_INTERFACE) {
 //header("Expires: " .gmdate ("D, d M Y H:i:s", time() + 3600 * 24 * 30). " GMT");
 
 //处理路径变量或是用URL的Get方式传入参数，同时允许传入五个自定义变量在模板中使用
-if ( empty($_SERVER["PATH_INFO"]) || strpos($_SERVER["SERVER_SOFTWARE"], "IIS")   ) { //Apache,http://www.cmsware.com/member/index.php/6,2.html
+if ( empty($_SERVER["PATH_INFO"]) || strpos($_SERVER["SERVER_SOFTWARE"], "IIS")   ) { //Apache,http://www.cmsware.net/member/index.php/6,2.html
 	$IN['nodeid'] = intval($IN['nodeid']); //处理nodeid为整型
 	$IN['page']   = intval($IN['page']);  //处理页号为整型
 //	$IN['Custom1']   = intval($IN['Custom1']);  //自定义传入变量1到5

@@ -2201,7 +2201,7 @@ class publishAdmin extends iData  {
 cmsware
 <a href="">cmsware</a>
 <b>cmsware</b>
-<a href="http://www.cmsware.com">cmsware</a>
+<a href="http://www.cmsware.net">cmsware</a>
 
 */
 function doPregReplace($_keyword, $_replace, $_str)

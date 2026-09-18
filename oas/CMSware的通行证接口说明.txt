@@ -18,9 +18,9 @@ CMSwareOAS 前台应用默认位于{cmsware}/oas（为了兼容以前的版本{c
 例如：
 首页模板 ：/oas/index.html   （{cmsware}/templates/oas下的模板为CMSwareOAS新闻模型动态发布的演示模板）
 内容页模板 ：/oas/content.html
-设置结点首页入口URL ：http://cms.cmsware.com/oas/index.php/{NodeID},{Page}.html
-设置内容页入口URL ：http://cms.cmsware.com/oas/content.php/{IndexID},{Page}.html
+设置结点首页入口URL ：http://cms.cmsware.net/oas/index.php/{NodeID},{Page}.html
+设置内容页入口URL ：http://cms.cmsware.net/oas/content.php/{IndexID},{Page}.html
 
 相应的评论页模板也请替换为oas目录下的
 
-注：将cms.cmsware.com替换为你的CMSware安装目录URL。 
+注：将cms.cmsware.net替换为你的CMSware安装目录URL。 

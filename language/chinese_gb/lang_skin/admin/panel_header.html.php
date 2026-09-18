@@ -45,21 +45,21 @@ $_LANG_SKIN = array (
   'online_manual' => '在线手册',
   'detect_news' => '检查新版本..',
   'about_cmsware' => '关于CMSware..',
-  'cmsware_com' => '官方网站(CMSware.com)',
+  'cmsware_com' => '官方网站(cmsware.net)',
   'plugins_admin' => '插件管理',
   'LicenseInfo_Product-name' => '注册版本',
   'LicenseInfo_Registered-to' => '注册用户',
   'LicenseInfo_Registered-URL' => '注册域名',
   'version' => '程序版本',
-  'copyright' => '<U>版权所有&nbsp;(C)&nbsp;1999-'.date('Y').' Lonmo Technology Ltd. </U>',
-  'license_txt' => '版权所有 (c) 1999-'.date('Y').', 蓝慕科技 保留所有权力.
+  'copyright' => '<U>版权所有&nbsp;(C)&nbsp;1999-'.date('Y').' CMSware</U>',
+  'license_txt' => '版权所有 (c) 1999-'.date('Y').', CMSware 保留所有权力.
     感谢您选择 思维网站内容管理系统。希望我们的努力能为您提供一个高效稳定和强大的 web 内容管理发布解决方案。
 
-思维网站内容管理系统由蓝慕科技(lonmo.com)独立开发，官方技术支持网站为 http://www.cmsware.com.
+思维网站内容管理系统官方技术支持网站为 http://www.cmsware.net.
 
 CMSware License
                    
-本《协议》是您或您的单位（软件使用者）与上海蓝慕信息科技有限公司（版权所有者）之间有关CMSware软件系列版本中软件部分的法律协议。
+本《协议》是您或您的单位（软件使用者）与版权所有者之间有关CMSware软件系列版本中软件部分的法律协议。
 其中包括软件程序包、电子文档、以及随带的其他相关部分，简称“软件产品”。您一旦购买本软件产品，即表示您同意接受本《协议》各项条款的约束。 
 一、有关本产品信息。 
   1、本软件产品名称：思维网站内容管理系统，英文名：CMSware。 

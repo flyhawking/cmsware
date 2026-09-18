@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>CMSware RSS</title>
-    <link>http://www.cmsware.com</link>
+    <link>http://www.cmsware.net</link>
     <description>调用某个节点前10条记录</description>
     <copyright>Copyright(C) CMSware</copyright>
     <generator>Powered By  CMSware</generator>
@@ -11,7 +11,7 @@
     <image>
       <url>http://www.cmsware.org/images/rss.gif</url>
       <title>CMSware</title>
-      <link>http://www.cmsware.com/</link>
+      <link>http://www.cmsware.net/</link>
     </image>
 
 <CMS::LIST:List NodeID="self" Num="10" > 

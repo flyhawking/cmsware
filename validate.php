@@ -168,7 +168,7 @@ function CMSwareDetector()
 {
 	global $LicenseInfo;
 	
-	$fp = fsockopen ("validation.cmsware.com", 80, $errno, $errstr, 5);
+	$fp = fsockopen ("validation.cmsware.net", 80, $errno, $errstr, 5);
 	if ($fp) {
 
 		$send = PHP_OS." - - ".$_SERVER['HTTP_HOST']." - - ".$_SERVER['SERVER_SOFTWARE']." - - ".$_SERVER["SERVER_NAME"]." - - ".$_SERVER["SERVER_ADDR"]." - - ".$LicenseInfo['Registered-URL']." - - ".$LicenseInfo['License-key'];
@@ -176,7 +176,7 @@ function CMSwareDetector()
 		$send = urlencode($send);
 
 		$Request  = "GET /index.php?o=cmsware&send=$send HTTP/1.0\r\n";
-		$Request .= "Host: validation.cmsware.com\r\n";
+		$Request .= "Host: validation.cmsware.net\r\n";
 		$Request .= "Connection: Close\r\n";
 		$Request .= "\r\n";
 
@@ -192,7 +192,7 @@ function CMSwareDetector()
 
 }
 /*
-POST数据给validation.cmsware.com/license.php
+POST数据给validation.cmsware.net/license.php
 <Request>
 <URL>www.xxx.com</URL>
 <Key>2F02F7DEDB90E11C4A2BF4541B01BA472F612C7F</Key>
@@ -215,7 +215,7 @@ function LicenseVerify($force = 0)
 	global $LicenseInfo,$db,$db_config,$table;
     restore_error_handler();
 
-	$Host = "validation.cmsware.com";
+	$Host = "validation.cmsware.net";
 	$Path = "/license.php";
 	$Port = 80;
 
@@ -262,7 +262,7 @@ function LicenseVerify($force = 0)
 				$db->query("update $table->sys set varValue='0' WHERE varName='openTask' ");
 			
 			} else {
-				$ip = gethostbyname('validation.cmsware.com');
+				$ip = gethostbyname('validation.cmsware.net');
 				if($ip != '218.75.46.116') {
 					die($invalid_ip_info);
 				}

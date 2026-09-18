@@ -1,7 +1,7 @@
 <?php
 require_once '../validate.php';
 /*if(time() > 2093708800)
-	die("CMSware Trial version have expired, please visit <a href='http://www.cmsware.com'>http://www.cmsware.com</a> to learn more!");
+	die("CMSware Trial version have expired, please visit <a href='http://www.cmsware.net'>http://www.cmsware.net</a> to learn more!");
 */
 require_once 'init.php';
 require_once LIB_PATH."Spring.php";

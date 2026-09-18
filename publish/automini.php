@@ -48,7 +48,7 @@ class AutoMini
 	{	 
 		if(isset($IN['copyright'])) {
 			header('Content-Type: text/html; charset=utf-8');
-			die("<H1>AutoMini ".CLASS_VERSION."</H1> <HR>Copyright &copy; 1999-".date("Y")." <A HREF='http://www.cmsware.com'>CMSware</A>&trade;. All rights reserved.<BR>CMSware缁勪欢锛屽晢涓氳蒋浠讹紝鏈粡鍏佽锛屼笉寰楁搮鑷娇鐢ㄥ拰鎾掓挱锛岃繚鑰呭繀绌讹紒 ");
+			die("<H1>AutoMini ".CLASS_VERSION."</H1> <HR>Copyright &copy; 1999-".date("Y")." <A HREF='http://www.cmsware.net'>CMSware</A>&trade;. All rights reserved.<BR>CMSware缁勪欢锛屽晢涓氳蒋浠讹紝鏈粡鍏佽锛屼笉寰楁搮鑷娇鐢ㄥ拰鎾掓挱锛岃繚鑰呭繀绌讹紒 ");
 		}
 		if(isset($IN['src'])) $this->src = $IN['src'];
 		if(isset($IN['pixel'])) $this->pixel= $IN['pixel'];

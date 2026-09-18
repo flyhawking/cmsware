@@ -6,7 +6,7 @@
 //Register-Info
 $License['Product-name'] = 'CMSware 2.7 Free';
 $License['Registered-to'] = 'CMSware Fans';
-$License['Registered-URL'] =  'www.cmsware.com';
+$License['Registered-URL'] =  'www.cmsware.net';
 $License['Registered-Date'] =  '2006-09-09';
 $License['Expired-Time'] =  '0';
 $License['Licence-issued'] = 'September 7, 2006';

@@ -12,7 +12,7 @@ if(_BBS_INTERFACE) {
 }
 
 if ( !strpos($_SERVER["REQUEST_URI"], "?")   ) { //当没有
-if ( strpos($_SERVER["SERVER_SOFTWARE"], "IIS")   ) { //Apache,http://www.cmsware.com/member/index.php/6,2.html
+if ( strpos($_SERVER["SERVER_SOFTWARE"], "IIS")   ) { //Apache,http://www.cmsware.net/member/index.php/6,2.html
 $IN['nodeid'] = intval($IN['nodeid']);
 $IN['tid']   = intval($IN['tid']);
 } else {

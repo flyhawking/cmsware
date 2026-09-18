@@ -4,8 +4,8 @@
 * This source file is part of the CMSware Content Management System.
 * 
 * This is NOT a freeware,use is subject to license terms
-* For pricing of this licence please contact us via e-mail to market@cmsware.com.
-* Further contact information is available at http://www.cmsware.com/.
+* For pricing of this licence please contact us via e-mail to market@cmsware.net.
+* Further contact information is available at http://www.cmsware.net/.
 * 
 * $Id: install.php,v 1.38 2006/08/15 15:24:42 Administrator Exp $
 * 
@@ -1010,4 +1010,4 @@ EOT;
 
 ?>
 <br>
-<div align=center><font id='description'>Powered by <a href="http://www.cmsware.com" target="_blank" id='description'><?=$version?></a> <BR> &nbsp; Copyright &copy; <a href="http://www.cmsware.com" target=\"_blank\" id='description'>Lonmo Technology Ltd</a> 1999-<?=date('Y')?> ,All rights reserved.</font> </div>
+<div align=center><font id='description'>Powered by <a href="http://www.cmsware.net" target="_blank" id='description'><?=$version?></a> <BR> &nbsp; Copyright &copy; <a href="http://www.cmsware.net" target=\"_blank\" id='description'>CMSware</a> 1999-<?=date('Y')?> ,All rights reserved.</font> </div>

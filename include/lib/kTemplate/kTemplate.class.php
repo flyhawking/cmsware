@@ -21,10 +21,10 @@
 *
 *
 * @package  kTemplate
-* @author   Hawking <hawking@cmsware.com>
+* @author   Hawking <hawking@cmsware.net>
 * @version  $Revision: 1.12 $
 * @access   public
-* @see      http://www.cmsware.com/manual/
+* @see      http://www.cmsware.net/manual/
 */
 class kTemplate {
 

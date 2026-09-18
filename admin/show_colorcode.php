@@ -39,7 +39,7 @@ $footer = '</body></html>';
 
 echo $header."<h4><FONT color=#339900>模板源代码查看:</FONT></h4><hr size=1>";
 echo "<div style=\"white-space: nowrap;\">" . $Contents . "</div></h4><hr size=1>";
-echo "<DIV align=center>Powered by <b>CMSware</b> 1999-2005 CMSware Ltd All rights reserved. </DIV>".$footer;
+echo "<DIV align=center>Powered by <b>CMSware</b> 1999-2005 All rights reserved. </DIV>".$footer;
 
 
 

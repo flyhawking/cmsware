@@ -14,19 +14,19 @@ $_LANG_SKIN = array (
 		例如：<br>
 		首页模板 ：/oas/index.html&nbsp;&nbsp;&nbsp;（{cmsware}/templates/oas下的模板为CMSwareOAS新闻模型动态发布的演示模板）<br>
 		内容页模板 ：/oas/content.html<br>
-		设置结点首页入口URL ：http://cms.cmsware.com/oas/index.php/{NodeID},{Page}.html<br>
-		设置内容页入口URL ：http://cms.cmsware.com/oas/content.php/{IndexID},{Page}.html
-		<br>注：将cms.cmsware.com替换为你的CMSware安装目录URL。
+		设置结点首页入口URL ：http://cms.cmsware.net/oas/index.php/{NodeID},{Page}.html<br>
+		设置内容页入口URL ：http://cms.cmsware.net/oas/content.php/{IndexID},{Page}.html
+		<br>注：将cms.cmsware.net替换为你的CMSware安装目录URL。
 		</li>
 			<br><br>
 	<li>{cmsware}/oas/config.php中的变量数组 <B>$EnableAccessInterceptorOAS</B> 可用来配置是否对某个子OAS启用权限验证机制。</li>
 		 </UL>',
   'form_input_CWPS_Address_title' => 'CWPS接口地址',
-  'form_input_CWPS_Address_description' => 'CWPS的SOAP接口地址，比如http://sso.cmsware.com/soap.php',
+  'form_input_CWPS_Address_description' => 'CWPS的SOAP接口地址，比如http://sso.cmsware.net/soap.php',
   'form_input_CWPS_TransactionAccessKey_title' => 'CWPS接口访问密码',
   'form_input_CWPS_TransactionAccessKey_description' => '一般情况下使用CWPS的默认访问密码即可，如果CWPS对OAS（CMSware OAS）单独设置了访问密码，那就需要填写单独访问密码',
   'form_input_CWPS_RootURL_title' => 'CWPS目录地址',
-  'form_input_CWPS_RootURL_description' => 'CWPS所在的Web地址	比如你的CWPS接口地址为http://sso.cmsware.com/cwps/soap.php,那么CWPS目录地址就应该设为http://sso.cmsware.com/cwps, CMSware模板中可使用[$CWPS_URL]引用该地址',
+  'form_input_CWPS_RootURL_description' => 'CWPS所在的Web地址	比如你的CWPS接口地址为http://sso.cmsware.net/cwps/soap.php,那么CWPS目录地址就应该设为http://sso.cmsware.net/cwps, CMSware模板中可使用[$CWPS_URL]引用该地址',
   'form_input_CWPS_SessionActiveTime_title' => 'CWPS会话同步时间(秒)',
   'form_input_CWPS_SessionActiveTime_value' => '1800',
   'form_input_CWPS_SessionActiveTime_description' => '设置间隔多少时间CMSware OAS与CWPS进行一次session会话信息的同步，建议设置为1800（半小时）',
@@ -35,12 +35,12 @@ $_LANG_SKIN = array (
   'form_input_CWPS_AdminPassword_title' => 'CWPS管理员密码',
   'form_input_CWPS_AdminPassword_description' => '如果你想保证CWPS管理帐号的安全性，可以只填写CWPS管理员用户名，而CWPS管理员密码留待登陆的时候再手动输入',
   'form_input_CWPS_SelfAdminURL_title' => '自定义CWPS管理入口地址',
-  'form_input_CWPS_SelfAdminURL_description' => '比如默认的CWPS管理入口地址为http://sso.cmsware.com/cwps/admin.php，<FONT  COLOR="#FF0000">建议留空</FONT>',
+  'form_input_CWPS_SelfAdminURL_description' => '比如默认的CWPS管理入口地址为http://sso.cmsware.net/cwps/admin.php，<FONT  COLOR="#FF0000">建议留空</FONT>',
   'form_input_CWPS_SelfIndexURL_title' => '自定义CWPS前台入口地址',
-  'form_input_CWPS_SelfIndexURL_description' => '比如默认的CWPS前台入口地址为http://sso.cmsware.com/cwps/index.php，<FONT  COLOR="#FF0000">建议留空</FONT>',
+  'form_input_CWPS_SelfIndexURL_description' => '比如默认的CWPS前台入口地址为http://sso.cmsware.net/cwps/index.php，<FONT  COLOR="#FF0000">建议留空</FONT>',
   'form_input_oas_setting_title' => 'CMSwareOAS基本设置',
   'form_input_OAS_RootURL_title' => 'CMSware OAS 目录地址',
-  'form_input_OAS_RootURL_description' => 'CMSware OAS应用所在的Web地址，比如你的CMSware管理地址为http://cms.cmsware.com/cmsware/admin,那么默认的CMSware OAS 目录地址应该为http://cms.cmsware.com/cmsware/oas, CMSware模板中可使用[$OAS_URL]引用该地址',
+  'form_input_OAS_RootURL_description' => 'CMSware OAS应用所在的Web地址，比如你的CMSware管理地址为http://cms.cmsware.net/cmsware/admin,那么默认的CMSware OAS 目录地址应该为http://cms.cmsware.net/cmsware/oas, CMSware模板中可使用[$OAS_URL]引用该地址',
   'form_input_AccessDenyTpl_title' => '权限禁止页面模板',
   'form_input_AccessDenyTpl_value' => '/oas/access_deny.html',
   'form_input_AccessDenyTpl_description' => '设置用户不具备访问权限时系统显示的报错页面所使用的模板',

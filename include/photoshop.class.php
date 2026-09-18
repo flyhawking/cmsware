@@ -4,7 +4,7 @@
  * Photoshop
  *
  * 实现图片处理
- * @author Hawking(hawking@cmsware.com)
+ * @author Hawking(hawking@cmsware.net)
  * @package CMSware
  */
 class Photoshop {

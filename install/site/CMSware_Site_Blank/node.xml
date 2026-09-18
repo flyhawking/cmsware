@@ -268,7 +268,7 @@
   <IsMail>0</IsMail>
   <Disabled>0</Disabled>
   <AutoPublish>2</AutoPublish>
-  <IndexPortalURL>http://www.cmsware.com/bbs</IndexPortalURL>
+  <IndexPortalURL>http://www.cmsware.net/bbs</IndexPortalURL>
   <ContentPortalURL/>
   <Pager>auto.php</Pager>
   <Editor>default.php</Editor>
