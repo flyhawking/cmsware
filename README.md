@@ -5,7 +5,7 @@
 
 ## 历史背景
 
-- **CMSware（思维内容管理系统）** 由 [雷志锋](https://github.com/hawkinglei) 于 2003–2006 年开发，上海蓝慕科技（lonmo.com）运营，PHP + MySQL 架构。
+- **CMSware（思维内容管理系统）** 由 [雷志锋](https://github.com/flyhawking) 于 2003–2006 年开发，PHP + MySQL 架构。
 - 巅峰期位列国内 CMS TOP3（与动易 PowerEasy、PHPCMS 同期竞争）。
 - 本仓库为 **CMSware Plus（2.7）** 版本的完整源码，快照日期 2007-01-07，含采集、投稿、评论、发布引擎、内容模型等完整功能。
 - 软件著作权登记号 2005SR02994，登记于原作者个人名下。
@@ -51,4 +51,4 @@
 
 ## License
 
-待定（原作者保留所有权利，重构版将另行选择开源协议）。
+[MIT](LICENSE) © 2003-2026 雷志锋 (Lei Zhifeng)
