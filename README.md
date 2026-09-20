@@ -3,6 +3,15 @@
 > 2003–2006 年代国内主流内容管理系统（CMS）之一的完整源码归档。
 > **状态：历史归档（Archived）** —— 作为 AI 重构新版的参照基线发布。
 
+## 20 年后的续章（See also）
+
+这个仓库是**历史起点**，不是产品。原作者 20 年后重新出发做的第一个线上工具是：
+
+- 🔍 **[wpexit.dev](https://wpexit.dev)** —— 免费扫描一个 WordPress 站点能否「URL 零变化」迁移到静态托管（30 秒出分，无需注册）。
+  源码：[flyhawking/wp-exit-scanner](https://github.com/flyhawking/wp-exit-scanner)（MIT）
+
+如果你是因为 CMSware 这段历史找过来的，想看看 20 年后这批内容模型的思路长什么样，从上面那个链接开始。
+
 ## 历史背景
 
 - **CMSware（思维内容管理系统）** 由 [雷志锋](https://github.com/flyhawking) 于 2003–2006 年开发，PHP + MySQL 架构。
